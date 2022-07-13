@@ -10,10 +10,11 @@ const myTravel = "Canada";
 let score = 0;
 //------------------------------------------------------------------- Question 1: Name
 let q1 = prompt(`Is ${myName} my name?`);
-if(q1.toLowerCase() == `yes` || q1.toLowerCase() == `y`){
+q1 = q1.toLowerCase();
+if(q1 == `yes` || q1 == `y`){
     alert(`Well done ${userName}, you guessed correctly that my name is ${myName}.`);
     score++;
-} else if(q1.toLowerCase() == `no` || q1.toLowerCase() == `n`){
+} else if(q1 == `no` || q1 == `n`){
     alert(`FALSE. ${userName}, that is incorrect.`);
 } else if(q1 == '' || q1 == null){
     alert(`${userName}, I guess you'd rather not answer...`);
@@ -21,9 +22,10 @@ if(q1.toLowerCase() == `yes` || q1.toLowerCase() == `y`){
 // console.log(q1);
 //----------------------------------------------------------------------- Question 2: Age 
 let q2 = prompt(`Is ${myName} 45 years old?`);
-if(q2.toLowerCase() == `yes` || q2.toLowerCase() == `y`){
+q2 = q2.toLowerCase();
+if(q2 == `yes` || q2 == `y`){
     alert(`${userName}, that's way off. ${myName} is actually ${myAge}.`);
-} else if(q2.toLowerCase() == `no` || q2.toLowerCase() == `n`) {
+} else if(q2 == `no` || q2 == `n`) {
     alert(`Correct ${userName}, ${myName} is actually ${myAge} years old.`);
     score++;
 } else if(q2 == '' || q2 == null){
@@ -32,9 +34,10 @@ if(q2.toLowerCase() == `yes` || q2.toLowerCase() == `y`){
 //console.log(q2);
 //----------------------------------------------------------------------- Question 3: Favorite Movie 
 let q3 = prompt(`Is ${myName}'s favorite film Titanic?`);
-if(q3.toLowerCase() == `yes` || q3.toLowerCase() == `y`) {
+q3 = q3.toLowerCase();
+if(q3 == `yes` || q3 == `y`) {
     alert(`FALSE! ${myName}'s favorite film is ${favMovie}.`);
-} else if(q3.toLowerCase() == `no` || q3.toLowerCase() == `n`){
+} else if(q3 == `no` || q3 == `n`){
     alert(`CORRECT. ${myName}'s favorite movie is ${favMovie}.`);
     score++;
 } else if(q3 == "" || q3 == null){
@@ -43,9 +46,10 @@ if(q3.toLowerCase() == `yes` || q3.toLowerCase() == `y`) {
 // console.log(q3);
 // ----------------------------------------------------------------------- Question 4: Home 
 let q4 = prompt(`Does ${myName} live in Bellingham, WA?`);
-if(q4.toLowerCase() == `yes` || q4.toLowerCase() == `y`){
+q4 = q4.toLowerCase();
+if(q4 == `yes` || q4 == `y`){
     alert(`FALSE. ${myName} lives in Spokane, WA.`);
-} else if(q4.toLowerCase() == `no` || q4.toLowerCase() == `n`){
+} else if(q4 == `no` || q4 == `n`){
     alert(`CORRECT. ${myName} actually lives in Spokane, WA.`);
     score++;
 }else if(q4 == "" || q4 == null){
@@ -54,10 +58,11 @@ if(q4.toLowerCase() == `yes` || q4.toLowerCase() == `y`){
 // console.log(q4);
 // ----------------------------------------------------------------------- Question 5: Foreign Living
 let q5 = prompt(`Did ${myName} ever live in Canada?`);
-if(q5.toLowerCase() == `yes` || q5.toLowerCase() == 'y'){
+q5 = q5.toLowerCase();
+if(q5 == `yes` || q5 == 'y'){
     alert(`Good guess ${userName}. ${myName} lived in Victoria, BC for several years.`);
     score++;
-} else if(q5.toLowerCase() == `no` || q5.toLowerCase() == `n`){
+} else if(q5 == `no` || q5 == `n`){
     alert(`FALSE. ${myName} did live in ${myTravel} for a few years.`);
 }else if(q5 == "" || q5 == null){
     alert(`Ok ${userName}, I guess you'd rather not answer...`);

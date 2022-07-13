@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: gray;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row; 
+    justify-content:center;
+    align-items:center;
+}
+
+.item {
+    background-color: rgb(245, 16, 16);
+    color:aliceblue;
+    font-size: 35px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    /* allows it to gro */
+}
+
+.item-1 {
+    
+    /* order: 3; */
+}
+
+.item-2 {
+    
+    /* order: 0 */
+}
+
+.item-3 {
+    
+    /* order: 4 */
+}
+
+.item-4 {
+    
+    /* flex-grow: ; */
+}
+
+.item-5 {
+    flex-basis: 700px;
+    flex-shrink: 0;
+}
+
+
+
+header {
+
+}
+
+body {
+    /* width: 70%; */
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+p {
+    margin-bottom: .5rem;
+}
