@@ -8,16 +8,16 @@
     <title>Lab 02: About Me Guessing Game</title>
 </head>
 <body>
-    <header>
-        <h1>Lab 02: About me Guessing Game</h1>
+    <header class="header-container">
+        <h1>Lab 02: About me Guessing Game</h1><hr id="header-hr">
     </header>
     <main>
         <div class="container">
-            <div class="item-1 item">1</div>
-            <div class="item-2 item">2</div>
-            <div class="item-3 item">3</div>
-            <div class="item-4 item">4</div>
-            <div class="item-5 item">5</div>
+            <div class="item-1 items" data-hover="My Name is Tom">My Name</div>   
+            <div class="item-2 items" data-hover="My Age is 36">My Age</div>  
+            <div class="item-3 items" data-hover="Fav. Movie is Star Wars">Fav. Movie</div>
+            <div class="item-4 items" data-hover="My Home is Spokane, WA">My Home</div>
+            <div class="item-5 items" data-hover="My Travel includes Nepal, China, Taiwan, etc.">My Travel</div> 
         </div>
         <!-- <div id="div1">
             <p>What is my Name?</p>
@@ -34,9 +34,19 @@
         <div id="div5">
             <p>Did I ever live overseas?</p>
         </div> -->
+        <h3>Short Biography</h3>
+        <div id="biography-container"> 
+            <ul>
+                <li>I live in Spokane, Washington.</li>
+                <li>I graduated from WSU.</li>
+                <li>I previously worked in a psychiatric hospital.</li>
+            </ul>
+        </div> 
     </main>
     <footer>
         <script src="app.js"></script>
+        <hr  id="footer-hr"> 
+        &copy Tom Taylor
     </footer>
 </body>
 </html>

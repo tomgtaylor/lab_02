@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.header-container {
+    text-align: center;
+}
+
 .container {
     background-color: gray;
     padding: 10px;
@@ -12,47 +16,53 @@
     flex-direction: row; 
     justify-content:center;
     align-items:center;
+    box-shadow: 0px 2px 4px 0px rgb(0, 0, 0, 0.9);
 }
 
-.item {
+.items {
     background-color: rgb(245, 16, 16);
     color:aliceblue;
-    font-size: 35px;
+    font-size: 25px;
     padding: 20px;
     margin: 10px;
-    flex: 1;
-    /* allows it to gro */
+    width: 16%;
+    height: 100px;
+    /* display: flex; */
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 2px 4px 0px rgb(0, 0, 0, 0.9);
+    /* flex: 0; */
+    /* allows it to gro */    
 }
 
-.item-1 {
-    
-    /* order: 3; */
+.items:hover{
+    font-size: 0;
+    background-color: salmon;
+    /* transform: rotate(180deg);
+    transition: 0.5s; */
+    /* content: "My name is Thomas Taylor."; */
 }
 
-.item-2 {
-    
-    /* order: 0 */
+.items:hover:after {
+    content: attr(data-hover);
+    font-size: 25px;
 }
 
-.item-3 {
-    
-    /* order: 4 */
+#header-hr {
+    margin-top: 25px;
+    color: lightblue;
 }
 
-.item-4 {
-    
-    /* flex-grow: ; */
+#footer-hr {
+    margin-bottom: 25px;
 }
 
-.item-5 {
-    flex-basis: 700px;
-    flex-shrink: 0;
-}
-
-
-
-header {
-
+#biography-container {
+    display: flex;
+    /* border: thin solid blue; */
+    /* border-radius: 5px; */
+    margin: 20px 0px 25px 10px;
+    padding: 5px 10px 5px 10 px;
 }
 
 body {
@@ -64,17 +74,10 @@ h1 {
     font-size: 2rem;
 }
 
-main {
-
-}
-
 ul {
     list-style: disc inside;
 }
 
 ol {
     list-style: decimal inside;
-}
-p {
-    margin-bottom: .5rem;
 }
